@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from "react";
-import StartQuestion from "../modalQuestions/page";
+import StartQuestion from "../modal-questions/page";
 
 type QuizStartModalProps = {
   quizDuration: number;
