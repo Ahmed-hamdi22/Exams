@@ -43,7 +43,7 @@ export default function NavBar() {
         <div className="hidden md:block w-[23%] font-semibold">
         <button
       type="submit"
-       className="w-full bg-[#4461F2] h-[55px] text-white rounded-[20px] md:bg-slate-50 md:text-[#4461F2]"
+       className="w-full xl:bg-[#4461F2] h-[55px]  xl:text-white rounded-[20px] md:bg-slate-50 md:text-[#4461F2]"
     >
        <Link href={'/allquizes'}>      Start Quiz  </Link>
      

@@ -4,17 +4,13 @@ import React, { useState } from "react";
 import StartQuestion from "../modalQuestions/page";
 
 type QuizStartModalProps = {
-  quizTitle: string;
   quizDuration: number;
   quizId : string;
   isOpen: boolean; 
 };
 
-const QuizStartModal: React.FC<QuizStartModalProps> = ({ isOpen, quizTitle,quizId}) => {
-  const [isSecondModalOpen, setIsSecondModalOpen] = useState(false);
-  console.log(`idd` , quizId);
-  console.log(`issdd` , quizTitle);
-  
+const QuizStartModal: React.FC<QuizStartModalProps> = ({ isOpen,quizId}) => {
+  const [isSecondModalOpen, setIsSecondModalOpen] = useState(false);  
   const handleStartQuiz = () => {
     setIsSecondModalOpen(true);
   };
