@@ -15,4 +15,7 @@ export default {
     },
   },
   plugins: [],
+ " path":{
+  "@/*": "./src/",
+ }
 } satisfies Config;

@@ -10,13 +10,13 @@ export default function NavLinks() {
     English
   </Link>
   <Link
-    href={"/login"}
+    href={"/auth/login"}
     className="text-[#4461F2] text-[16px] md:text-[20px] font-bold cursor-pointer"
   >
     Sign in
   </Link>
   <Link
-    href={"/register"}
+    href={"/auth/register"}
     className="border px-[20px] py-[8px] md:px-[30px] md:py-[10px] font-bold text-[#4461F2] rounded-2xl cursor-pointer"
   >
     Register
