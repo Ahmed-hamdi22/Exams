@@ -1,14 +1,22 @@
 import React from 'react';
 
+type ShowResultProps = {
+    getWrongQuestions: any;
+    selectedAnswers: any;
+    onClose: any;
+    questions: any;
+    answer: any;
+    idx: any;
+};
 const ShowResult = (
-    { getWrongQuestions, selectedAnswers, onClose ,questions,answer ,idx}
+    { getWrongQuestions, selectedAnswers, onClose, questions, answer, idx }: ShowResultProps
 ) => {
     return (
         <>
         
     
             <div
-              className="overflow-y-auto h-[80vh] w-full"
+              className="overflow-y-auto h-full w-full"
               style={{ maxHeight: "100vh" }}
             >
              

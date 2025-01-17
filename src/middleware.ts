@@ -1,20 +1,3 @@
-// import { NextRequest, NextResponse } from "next/server";
-
-// export default function middleware(request : NextRequest){
-//     const token = request.cookies.get("next-auth.session-token")
-//     if(!token){
-//      return NextResponse.rewrite(new URL("/login" , request.url))
-//     }
-
-//     return NextResponse.next();
-// }
-
-// export const config = {
-//     matcher: ["/", "/dashboard", "/forgetPassword","/dashboard/:examsId"]
-// };
-
-
-
 
 import { getToken } from 'next-auth/jwt'
 import { NextResponse } from 'next/server'
@@ -25,7 +8,6 @@ const privatePages = ['/dashboard']
 
 export  default async function middleware(request: NextRequest) {
     const token = await getToken ({req:request})  
-    console.log("Middleware Token:", token);
     const url=request.nextUrl.pathname;
     if(token && authPages.includes(url)){
         const redirectUrl= new URL('/dashboard',request.nextUrl.origin)

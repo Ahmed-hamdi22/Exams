@@ -30,9 +30,7 @@ export default function LoginForm() {
             
             if (result.status === 401) {
               formik.setErrors({ password: 'Incorrect email or password' });
-            } else {
-              formik.setErrors({ email: 'An unexpected error occurred. Please try again later.' });
-            }
+            } 
           }
           else if(result?.ok){
             router.push("/dashboard")
@@ -111,7 +109,7 @@ export default function LoginForm() {
 
 
         <p className="text-end text-base font-normal mb-[10px]">
-          <Link className="text-[#4461F2]" href={"/forget-password"}>
+          <Link className="text-[#4461F2]" href={"/auth/forget-password"}>
             Recover Password ?
           </Link>
         </p>
